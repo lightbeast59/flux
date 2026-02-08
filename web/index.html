@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+
+  <!-- Primary Meta Tags -->
+  <title>Flux - Task Management App | Organize Your Tasks Effortlessly</title>
+  <meta name="title" content="Flux - Task Management App | Organize Your Tasks Effortlessly">
+  <meta name="description" content="Flux is the world's best task management app. Organize tasks, track deadlines, use smart calendars, and boost your productivity. Free to use with Google sign-in.">
+  <meta name="keywords" content="task management, productivity app, to-do list, task organizer, project management, calendar, deadline tracker, flux app, task tracker">
+  <meta name="author" content="Flux">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://flux3task.web.app/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flux3task.web.app/">
+  <meta property="og:title" content="Flux - Task Management App | Organize Your Tasks Effortlessly">
+  <meta property="og:description" content="Flux is the world's best task management app. Organize tasks, track deadlines, use smart calendars, and boost your productivity.">
+  <meta property="og:image" content="https://flux3task.web.app/icons/Icon-512.png">
+  <meta property="og:site_name" content="Flux">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://flux3task.web.app/">
+  <meta property="twitter:title" content="Flux - Task Management App | Organize Your Tasks Effortlessly">
+  <meta property="twitter:description" content="Flux is the world's best task management app. Organize tasks, track deadlines, use smart calendars, and boost your productivity.">
+  <meta property="twitter:image" content="https://flux3task.web.app/icons/Icon-512.png">
+
+  <!-- Mobile App Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Flux">
+  <meta name="application-name" content="Flux">
+  <meta name="theme-color" content="#6366F1">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Google Sign In -->
+  <meta name="google-signin-client_id" content="133693046891-kgped1age61c3fpplr9jpg09sorncb1i.apps.googleusercontent.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #FAFAFA;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .loading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid #E5E7EB;
+      border-top: 4px solid #6366F1;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      -webkit-animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    .loading-text {
+      margin-top: 20px;
+      color: #6B7280;
+      font-size: 16px;
+    }
+    .error-message {
+      display: none;
+      color: #EF4444;
+      margin-top: 20px;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    /* Install Button */
+    .install-button {
+      display: block;
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+      z-index: 9999;
+      transition: all 0.2s ease;
+      font-family: inherit;
+      text-decoration: none;
+    }
+    .install-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+    }
+    .install-button:active {
+      transform: translateY(0);
+    }
+    .install-button svg {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    .install-button span {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="loading" id="loading">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Loading Flux...</div>
+    <div class="error-message" id="error">
+      Failed to load Flux. Please refresh the page or try a different browser.
+    </div>
+  </div>
+
+  <!-- Install Button -->
+  <a href="/flux-app.zip" class="install-button" download>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+    </svg>
+    <span>Install App</span>
+  </a>
+
+  <script>
+    // Download app function - callable from Flutter
+    window.downloadFluxApp = function() {
+      window.location.href = '/flux-app.zip';
+    };
+  </script>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

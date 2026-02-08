@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "133693046891",
+    "project_id": "flux3task",
+    "storage_bucket": "flux3task.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133693046891:android:a4edb12161977bdc7b312e",
+        "android_client_info": {
+          "package_name": "com.task.flux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133693046891-elkp89mq1qrce3na31rmlvn5p5njgm8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.task.flux",
+            "certificate_hash": "e3311375c8798817600426d931b20ce605720106"
+          }
+        },
+        {
+          "client_id": "133693046891-kgped1age61c3fpplr9jpg09sorncb1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8808tvr7YgxfHLzC-YAeJUjKsWHKGsks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133693046891-kgped1age61c3fpplr9jpg09sorncb1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
