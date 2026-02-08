@@ -1,10 +1,10 @@
-# TaskNest - Production-Ready Task Management Web App
+# Flux - Production-Ready Task Management App
 
-**The world's best task management web application built with Flutter Web**
+**The world's best task management application built with Flutter**
 
 ## Architecture Overview
 
-TaskNest is built with a clean, modular architecture using:
+Flux is built with a clean, modular architecture using:
 - **Flutter Web** - Cross-platform UI framework
 - **Riverpod** - Robust state management with compile-time safety
 - **Firebase** - Backend services (Authentication, Firestore, Hosting)
